@@ -15,7 +15,7 @@ app.get("/About",(req,res)=>{
 })
 app.post("/api",async (req,res)=>{
   const data = await req.body
-  res.status(500).json({hello:data,msg:"qwertyuioasdfghjkl"})
+  res.status(201).json({hello:data,msg:"qwertyuioasdfghjkl"})
 })
 
 app.listen(port,()=>{
